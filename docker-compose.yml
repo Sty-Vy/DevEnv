@@ -1,0 +1,18 @@
+version: '3'
+services:
+    web:
+        image: nginx:latest
+        ports:
+            - "81:81"
+        volumes:
+            - ./nginx.conf:/etc/nginx/conf.d/nginx.conf
+            - ./siteBootstrap:/app
+        links:
+            - php
+    php:
+        build:
+            context: .
+            dockerfile: PHP.Dockerfile
+        volumes:
+            - ./siteBootstrap:/app
+
