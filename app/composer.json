@@ -1,0 +1,23 @@
+{
+    "name": "slegat/site-bootstrap",
+    "autoload": {
+        "psr-4": {
+            "Slegat\\SiteBootstrap\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Stefan Legat",
+            "email": "legat.stefan.mt@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/console": "^6.4",
+        "ext-pdo": "*",
+        "pimple/pimple": "3.2.*",
+        "league/plates": "^v3.4",
+        "symfony/var-dumper": "^5.4",
+        "symfony/http-foundation": "^5.4",
+        "pecee/simple-router": "5.4.1.4"
+    }
+}
